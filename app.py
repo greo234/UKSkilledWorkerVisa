@@ -26,11 +26,7 @@ st.title("UK Skilled Worker Visa Sponsor Checker")
 st.markdown("""
 Welcome! 👋  
 Use this app to find UK companies that sponsor skilled worker visas.  
-Just type in a **company name** or a **description** like:
-
-- `"tech firm in London"`
-- `"care home in Manchester"`
-
+Just type in a **company name** or a **description** and
 We'll find the closest matches for you.  
 """)
 
@@ -39,7 +35,7 @@ query = st.text_input("Enter a company name or description (e.g., 'care agency i
 if query:
     query_embedding = model.encode(query, convert_to_tensor=True)
     cos_scores = util.cos_sim(query_embedding, company_embeddings)[0]
-    top_results = cos_scores.argsort(descending=True)[:5]
+    top_results = cos_scores.argsort(descending=True)[:20]
 
     st.subheader("Top Matches:")
     for idx in top_results:
