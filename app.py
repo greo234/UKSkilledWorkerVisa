@@ -46,3 +46,9 @@ if query:
         **Type & Rating:** `{row['Type & Rating']}`  
         **Route:** `{row['Route']}`  
         """)
+st.markdown("""
+<hr style="margin-top: 40px;">
+<p style='text-align: center; font-size: 14px; color: gray;'>
+    🚀 Powered by <strong>Viriledigital</strong> | Built with ❤️ using Streamlit & BERT
+</p>
+""", unsafe_allow_html=True)
