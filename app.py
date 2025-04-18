@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer, util
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('uk_sponsors.csv')
+    df = pd.read_csv('UK_sponsors.csv')
     df['Organisation Name'] = df['Organisation Name'].astype(str)
     return df
 
