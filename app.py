@@ -20,7 +20,19 @@ df = load_data()
 model, company_embeddings = load_model_and_embeddings(df)
 
 # App UI
-st.title("🇬🇧 UK Skilled Worker Visa Sponsor Checker")
+st.image("https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg", width=100)
+st.title("UK Skilled Worker Visa Sponsor Checker")
+
+st.markdown("""
+Welcome! 👋  
+Use this app to find UK companies that sponsor skilled worker visas.  
+Just type in a **company name** or a **description** like:
+
+- `"tech firm in London"`
+- `"care home in Manchester"`
+
+We'll find the closest matches for you.  
+""")
 
 query = st.text_input("Enter a company name or description (e.g., 'care agency in London'):")
 
