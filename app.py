@@ -44,7 +44,7 @@ Here are some key points:
     """)
 
 
-query = st.text_input("Enter a company name or description (e.g., 'care agency in London'):")
+query = st.text_input("Enter a company name or description")
 
 if query:
     query_embedding = model.encode(query, convert_to_tensor=True)
