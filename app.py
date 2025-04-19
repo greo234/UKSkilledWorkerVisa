@@ -30,6 +30,20 @@ Just type in a **company name** or a **description** and
 We'll find the closest matches for you.  
 """)
 
+with st.expander("📘 Skilled Worker Visa Overview"):
+    st.markdown("""
+**Want to understand how skilled worker visa sponsorship works?**  
+Here are some key points:
+- Your job must be on the [Skilled Worker Occupation List](https://www.gov.uk/government/publications/skilled-worker-visa-immigration-salary-list/skilled-worker-visa-immigration-salary-list)
+- It must meet the **minimum salary requirement**
+- Exceptions exist for **new graduates**, **shortage roles**, and **education/healthcare workers**
+
+🔗 Learn more:  
+- [Your job requirements](https://www.gov.uk/skilled-worker-visa/your-job)  
+- [When you can be paid less](https://www.gov.uk/skilled-worker-visa/when-you-can-be-paid-less)
+    """)
+
+
 query = st.text_input("Enter a company name or description (e.g., 'care agency in London'):")
 
 if query:
