@@ -34,8 +34,8 @@ with st.expander("📘 Skilled Worker Visa Overview"):
     st.markdown("""
 **Want to understand how skilled worker visa sponsorship works?**  
 Here are some key points:
-- Your job must be on the [Skilled Worker Occupation List](https://www.gov.uk/government/publications/skilled-worker-visa-immigration-salary-list/skilled-worker-visa-immigration-salary-list)
-- It must meet the **minimum salary requirement** which you can check [here](https://www.gov.uk/government/publications/skilled-worker-visa-going-rates-for-eligible-occupations/skilled-worker-visa-going-rates-for-eligible-occupation-codes)
+- Your job must be on the [Skilled Worker Occupation List](https://www.gov.uk/government/publications/skilled-worker-visa-going-rates-for-eligible-occupations/skilled-worker-visa-going-rates-for-eligible-occupation-codes)
+- It must meet the **minimum salary requirement** of £38,700 and the annual going rate threshold for the role.
 - Exceptions exist for **new graduates**, **shortage roles**, and **education/healthcare workers**
 
 🔗 Learn more:  
