@@ -49,7 +49,7 @@ query = st.text_input("Enter a company name or description")
 if query:
     query_embedding = model.encode(query, convert_to_tensor=True)
     cos_scores = util.cos_sim(query_embedding, company_embeddings)[0]
-    top_results = cos_scores.argsort(descending=True)[:20]
+    top_results = cos_scores.argsort(descending=True)[:10]
 
     st.subheader("Top Matches:")
     for idx in top_results:
